@@ -24,7 +24,8 @@ async def process_image(file: UploadFile) -> Dict[str, List[str]]:
     return JSONResponse(
         status_code=200,
         content={
-            "tags": tags
+            "tags": tags,
+            "space_line": " ".join(tags),
         }
     )
 
