@@ -1,0 +1,5 @@
+services:
+  tagger:
+    image: boldig/ddtagger:1.0.1
+    ports:
+      - 8000:8000
